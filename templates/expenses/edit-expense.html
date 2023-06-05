@@ -6,19 +6,27 @@
 
 <div class="container mt-4">
 
-  <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/expenses/">Projects</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Add Projects</li>
-      </ol>
-  </nav>
+  
+  <div class="row">
+    <div class="col-md-10">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'expenses' %}">Projects</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Edit Projects</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="col-md-2">
+        <a href="{% url 'delete_expense' project.id %}" class="btn btn-danger btn-sm">Delete</a>
+    </div>
+  </div>
 
 
   <div class="card">
 
     <div class="card-body">
 
-      <form action="{% url 'add-expenses' %}" method="post">
+      <form action="{% url 'expense_edit' project.id %}" method="post">
         {% include 'partials/_messages.html' %}
         {% csrf_token %}
         <div class="form-group">
@@ -32,6 +40,7 @@
         <div class="form-group">
           <label for = "">Category</label>
           <select class="form-control" name="category">
+          <option selected name="category" value="{{values.category}}"> {{values.category}} </option>
           {% for category in categories%}
           <option name="category" value="{{category.name}}"> {{category.name}} </option>
 
@@ -43,7 +52,7 @@
           <input type = "date" class = "form-control form-control-sm" name = "listing_date" value="{{values.listing_date}}">
         </div>
 
-        <input type="submit" value="Submit" class="btn btn-primary btn-primary-sm">
+        <input type="submit" value="Save" class="btn btn-primary btn-primary-sm">
       </form>
     
     </div>

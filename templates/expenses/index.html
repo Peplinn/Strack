@@ -1,10 +1,53 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<h1>Expenses List</h1>
+<div class = 'container mt-3'>
+    <div class="row ">
+        <div class="col-md-10">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'expenses' %}">Projects</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">My Projects</li>
+                </ol>
+            </nav>
+        </div>
 
-<ul class="list-group">
-<li class="list-group-item">Bought Beer</li>
-</ul>
+        <div class="col-md-2">
+            <a href="/add_expense" class="btn btn-primary">Add Projects</a>
+        </div>
+    
+    </div>
+    {% include 'partials/_messages.html' %}
+    
+    <div class="container">
+
+        {% if projects.count %}
+        <table class="table table-stripped table-hover">
+            <thead>
+                <tr>
+                    <th>Amount (CURRENCY)</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for project in projects %}
+                <tr>
+                    <td>{{project.amount}}</td>
+                    <td>{{project.description}}</td>
+                    <td>{{project.category}}</td>
+                    <td>{{project.date}}</td>
+
+                    <td> <a href = "{% url 'expense_edit' project.id %}" class = "btn btn-secondary btn-sm">Edit</a> </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock content %}
