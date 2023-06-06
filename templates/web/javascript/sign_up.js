@@ -13,7 +13,7 @@ if (passWord.innerHTML < 8 ){
     prompt('Please enter more than 8 characters!')
 }   else if (passWord.innerHTML >= 8){
     prompt('Password valid!')
-}
+};
 
 //
 
