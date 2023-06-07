@@ -24,7 +24,7 @@ font-size: 1rem;
 }
 
 a:hover{
-    color: blue; 
+    color:#fc10cd;
 }
 
 /*Header*/
@@ -98,6 +98,7 @@ header{
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+
 .dropdown_menu.open{
     height: 240px;
     
@@ -106,6 +107,7 @@ header{
 .dropdown_menu li{
     padding: 0.7 rem;
     display: flex;
+    padding: 8px;
     align-items: center;
     justify-content: center;
 
@@ -119,7 +121,7 @@ header{
 
 /*Responsiveness*/
 
-/* @media only screen and (max-width: 600px) and (min-width: 400px) {
+     @media only screen and (max-width: 992px)  {
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -133,5 +135,12 @@ header{
         display: block;
 
     }
-} */
+} 
+
+@media (max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unsetf;
+    }
+}
 

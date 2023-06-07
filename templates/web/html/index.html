@@ -1,14 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strack | </title>
+    <title>Strack</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -22,18 +27,29 @@
             </ul>
             <a href="#" class="action_btn">Get Started</a>
             <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <ion-icon name="menu-outline"></ion-icon>
+                <!-- <ion-icon name="close-outline"></ion-icon> -->
             </div>
         </div>
         
-        <div class="dropdown_menu open">
-            <li><a href="hero">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li><a href="sign-up">Sign Up</a></li>
-        <li> <a href="#" class="action_btn">Get Started</a></li>
+        <div class="dropdown_menu">
+            <!-- <li><a href="hero">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="sign-up">Sign Up</a></li> -->
+            <li><a href="#" class="action_btn">Get Started</a></li>
         </div>
     </header>
+
+    <script>
+        const toggle_btn = document.querySelector('.toggle_btn');
+        const dropdown_menu = document.querySelector('.dropdown_menu');
+
+        toggle_btn.onclick = function () {
+            dropdown_menu.classList.toggle('open');
+        };
+    </script>
 </body>
 </html>
