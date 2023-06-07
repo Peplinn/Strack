@@ -23,33 +23,51 @@
                 <li><a href="about">About</a></li>
                 <li><a href="services">Services</a></li>
                 <li><a href="contact">Contact</a></li>
-                <li><a href="sign-up">Sign Up</a></li>
+                <li><a href="/html/sign_up/sign_up.html">Sign Up</a></li>
             </ul>
             <a href="#" class="action_btn">Get Started</a>
+
             <div class="toggle_btn">
-                <!-- <i class="fa-solid fa-bars"></i> -->
                 <ion-icon name="menu-outline"></ion-icon>
-                <!-- <ion-icon name="close-outline"></ion-icon> -->
             </div>
+
         </div>
         
         <div class="dropdown_menu">
-            <!-- <li><a href="hero">Home</a></li>
+            <li><a href="hero">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="services">Services</a></li>
             <li><a href="contact">Contact</a></li>
-            <li><a href="sign-up">Sign Up</a></li> -->
+            <li><a href="/html/sign_up/sign_up.html">Sign Up</a></li>
             <li><a href="#" class="action_btn">Get Started</a></li>
         </div>
     </header>
 
+    <main>
+        <!-- <section>
+            <h1>Welcome to Strack</h1>
+        </section> -->
+    </main>
+
     <script>
+
         const toggle_btn = document.querySelector('.toggle_btn');
         const dropdown_menu = document.querySelector('.dropdown_menu');
+        const toggleIcon = document.querySelector('.toggle_btn ion-icon');
 
-        toggle_btn.onclick = function () {
+            toggle_btn.onclick = function () {
             dropdown_menu.classList.toggle('open');
-        };
+
+                if (dropdown_menu.classList.contains('open')) {
+                toggleIcon.setAttribute('name', 'close-outline');
+            } else {
+                        toggleIcon.setAttribute('name', 'menu-outline');
+                    }
+};
+
+
     </script>
+
+
 </body>
 </html>
