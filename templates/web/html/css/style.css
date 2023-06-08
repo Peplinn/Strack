@@ -116,6 +116,33 @@ header {
   justify-content: center;
 }
 
+.home_content {
+    display: flex;
+    margin-top: 10emem;
+    /* justify-content: center; */
+}
+
+.home_content img{
+    justify-content: right;
+    padding-left: 50em;
+    width: 100%;
+    margin-top: 7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsiveness */
 
 @media only screen and (max-width: 992px) {
@@ -131,11 +158,25 @@ header {
   .dropdown_menu {
     display: block;
   }
+/*The home page*/
+
+  .home_content {
+    display: flex;
+    margin-top: 10emem;
+    /* justify-content: center; */
 }
 
-@media (max-width: 576px) {
+.home_content img{
+    justify-content: center;
+    padding-left: 0em;
+    width: 100%;
+    margin-top: 7em;
+}
+}
+
+/* @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
   }
-}
+} */
