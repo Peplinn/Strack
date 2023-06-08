@@ -7,7 +7,20 @@
   color: #fff;
 }
 
-body {
+html{
+    scroll-behavior:smooth;
+    animation: alternate;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
   height: 100vh;
   background-color: black;
   background-image: url(/html/images/milad-unsplash.jpg);
@@ -51,6 +64,10 @@ header {
   font-weight: bold;
 }
 
+.logo{
+    margin: 0px;
+}
+
 .navbar .links {
   display: flex;
   gap: 2rem;
@@ -88,7 +105,7 @@ header {
 .dropdown_menu {
   display: none;
   position: absolute;
-  right: 2rem;
+  right: 0rem;
   top: 60px;
   height: 0;
   width: 300px;
@@ -116,21 +133,61 @@ header {
   justify-content: center;
 }
 
-.home_content {
+
+
+section{
+    margin: 0rem;
+}
+
+.hero_content{
     display: flex;
-    margin-top: 10emem;
-    /* justify-content: center; */
+    flex-wrap: nowrap;
+    /* border: 4px solid red; */
+    margin-top: 3rem;
+}
+ .hero_text{
+    /* border: 4px solid yellow; */
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 3em;
+    
+} h1, p{
+    margin-left: 0;
+    margin-top: 2em;
+    text-align: left;
 }
 
-.home_content img{
-    justify-content: right;
-    padding-left: 50em;
-    width: 100%;
-    margin-top: 7em;
+.hero_text h1 :hover{
+    background-color: blue;
+    
 }
 
 
 
+.hero_content img{
+    /* border: 4px solid green; */
+    width: 40%;
+    padding-right: 3em;
+}
+
+/* About Section */
+
+.about{
+    display: flex;
+    border: 4px solid red;
+    background-color:#170034;
+    height: 70vh;
+}
+
+.about_text{
+    border: 4px solid yellow;
+}
+
+.about_img{
+    border: 4px solid green;
+}
 
 
 
@@ -158,25 +215,64 @@ header {
   .dropdown_menu {
     display: block;
   }
+
+
 /*The home page*/
 
-  .home_content {
-    display: flex;
-    margin-top: 10emem;
-    /* justify-content: center; */
+section{
+    margin: 0rem;
 }
 
-.home_content img{
-    justify-content: center;
-    padding-left: 0em;
+.hero_content{
+    display: block;
+    /* border: 4px solid red; */
+    margin-top: 7%;
+    width: auto;
+
+    }
+
+
+ .hero_text{
+    padding-left: 3em;
+    /* border: 4px solid yellow; */
+    margin-left: em;
+    margin-top: 0%;
+    text-align: left;
+    margin-left: 1em;
+    width: 7.5em;
+    
+    
+}
+
+.hero_text h1 {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 0%;
+    width: 10em;
+    /* border: 4px solid black; */
+    height: fit-content;
+    margin-left: -3.4em;
+    margin-bottom: 1em;
+    
+}
+
+.hero_text p{
+    text-align: left;
+    font-size: 0.7em;
+    margin: 0%;
+    width: 15em;
+    height: fit-content;
+    margin-left: -4.7em;
+    /* border: 4px solid blue; */
+
+
+}
+
+.hero_content img{
+    /* border: 4px solid green; */
     width: 100%;
-    margin-top: 7em;
+
 }
 }
 
-/* @media (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
-  }
-} */
+
