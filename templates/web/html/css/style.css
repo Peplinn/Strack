@@ -15,9 +15,10 @@ html{
 body{
     height: 100vh;
     background-color: black;
-
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container{
@@ -157,6 +158,11 @@ section{
     margin-left: 0;
     margin-top: 2em;
     text-align: left;
+    
+}
+
+.hero_text p{
+    padding-top: 1em;
 }
 
 .hero_text h1 :hover{
@@ -177,16 +183,20 @@ section{
 .about{
     display: flex;
     border: 4px solid red;
-    background-color:#170034;
+    background-color:#fff;
     height: 70vh;
 }
 
 .about_text{
+    width: 60%;
+    text-align: center;
+    background-color: black;
     border: 4px solid yellow;
 }
 
-.about_img{
+.about img{
     border: 4px solid green;
+    width: 40%;
 }
 
 
@@ -203,6 +213,7 @@ section{
 /* Responsiveness */
 
 @media only screen and (max-width: 992px) {
+  
   .navbar .links,
   .navbar .action_btn {
     display: none;
@@ -270,9 +281,13 @@ section{
 
 .hero_content img{
     /* border: 4px solid green; */
+    padding-top: 1em;
     width: 100%;
 
 }
+
+
+
 }
 
 
