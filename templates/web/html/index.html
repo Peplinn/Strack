@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -46,10 +47,10 @@
 
 
     <section idclass="hero">
-        <div class="hero_content">
+        <div  class="hero_content" >
             <div class="hero_text">
-            <h1 class="welcome">Welcome to  <b style="background-color: rgb(255, 0, 170); ">STRACK</b> </h1>
-            <p class="strack_content">STRACK is a project management software designed to streamline your project 
+            <h1 class="animateUp strack">Welcome to  <b style="background-color: rgb(255, 0, 170); " >STRACK</b> </h1>
+            <p class="animateSide">STRACK is a project management software designed to streamline your project 
                 workflow and enhance collaboration among team members.
                  With our intuitive features and user-friendly interface, managing projects
                   has never been easier. </p>
@@ -61,37 +62,45 @@
 
     </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="about_text">
                 <h2>About</h2>
-                <p>
-                    Strack is a powerful project management tool that streamlines workflow,
-                     maximizes productivity, and delivers successful projects. 
-                    With an intuitive interface, easily create and organize projects,
-                     assign tasks, and track progress in real-time. 
-                     <br> <br> <br> Collaboration is seamless, fostering communication, file sharing, and updates within the platform.
-                      Stay organized with comprehensive tools for task management,
-                       time tracking, resource allocation, and budget management.
-                       <br> <br>  <br>       Your data is secure and confidential,
-                         adhering to industry standards. 
-                         Strack is flexible and scalable, 
-                         customizable to your organization's
-                          processes. <br> <br> <br>Join thousands of satisfied users
-                           and revolutionize your project management
-                            experience.
-                             Welcome to Strack, where efficiency, collaboration, and rewards await.</p>
+                <p>Strack is a powerful project management tool that streamlines workflow, maximizes productivity, and delivers successful projects.
+                <p>With an intuitive interface, you can easily create and organize projects, assign tasks, and track progress in real-time.</p>
+                <p>Collaboration is seamless, fostering communication, file sharing, and updates within the platform. Stay organized with comprehensive tools for task management, time tracking, resource allocation, and budget management.</p>
+                <p>Your data is secure and confidential, adhering to industry standards. Strack is flexible, scalable, and customizable to your organization's processes.</p>
+                <p>Join thousands of satisfied users and revolutionize your project management experience. Welcome to Strack, where efficiency, collaboration, and rewards await.</p>
                
             </div>
             <img src="/html/images/about.png" alt="">
         </div>
 
-
-        <div class="service">
+        <div class="service_section">
+            <h2>Services We Offer</h2>
+         <div class="service">
             <div class="service_text">
-                <h2>Services We Offer</h2>
+                
                 <p>
-                    At Strack, we provide a wide range of services to cater to your project management needs. Our offerings include:
+                    At Strack, we provide a wide range of services to cater to your project management needs. <br> Our offerings include:
                 </p>
+                <div class="service_list">
+                        <div class="list_one">
+                            <ul>
+                            <li>Project Planning and Organization</li>
+                        <li>Task Management and Assignment</li>
+                        <li>Real-time Progress Tracking</li>
+                        <li>Collaboration and Communication Tools</li>
+                        <li>File Sharing and Document Management</li> </ul>
+                        </div>
+                        <div class="list_two">
+                          <ul> <li>Time Tracking and Resource Allocation</li>
+                            <li>Budget Management and Cost Tracking</li>
+                            <li>Customizable Workflows and Processes</li>
+                            <li>Data Security and Confidentiality</li>
+                            <li>User-friendly Interface and Intuitive Features</li> </ul> 
+                        </div>
+                    
+                </div>
                 <ul>
                     <li>Project Planning and Organization</li>
                     <li>Task Management and Assignment</li>
@@ -107,12 +116,16 @@
                 <p>
                     Whether you are a small team or a large organization, our services are designed to streamline your project workflow, enhance collaboration among team members, and ultimately drive successful project outcomes.
                 </p>
+                
             </div>
+            
 
             <div class="service_img">
-                <img src="/html/images/" alt="">
+                <img src="/html/images/3497651-removebg-preview.png" alt="">
             </div>
         </div>
+
+    </div>
         
    
 
@@ -135,8 +148,18 @@
                     }
 };
 
+    const scroll = document.querySelector = ('#about > div > h2');
+    window.onscroll = function() {
+        myFunction()
+    }
+
 
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>

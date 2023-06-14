@@ -19,9 +19,10 @@ html {
 
 body {
   height: 100vh;
-  background-color: black;
+  background-color: white;
   background-size: cover;
   background-position: center;
+  
 
 }
 
@@ -33,8 +34,12 @@ body {
   background-position: center;
 }
 
-li {
+.links li {
+  list-style-type: none;
   list-style: none;
+}
+.dropdown_menu li{
+  list-style-type: none;
 }
 
 a {
@@ -170,40 +175,6 @@ p {
   padding-top: 1em;
 }
 
-@keyframes strackContent{
-  from{
-    transform: translateX(-300px);
-  }
-  to{
-    transform: translateX(0);
-  }
-}
-
-.strack_content{
-  animation-name: strackContent;
-  animation-duration: 1s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  
-}
-
-@keyframes welcome{
-  from{
-    transform: translateY(-300px);
-  }
-  to{
-    transform: translateY(0);
-  }
-}
-.welcome{
-  animation-name: welcome;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-}
-
 .hero_text h1:hover {
   background-color: blue;
 }
@@ -212,14 +183,17 @@ p {
     /* border: 3px solid red; */
   width: 0%;
   padding-right: 3em;
+
 }
 
 /* About Section */
 
 .about {
+  margin-top: 3em;
   display: flex;
   background-color: #fff;
   width: 100%;
+  height: 100%;
 }
 
 .about_text {
@@ -250,37 +224,62 @@ p {
 }
 
 /*Services*/
-/* 
+
+.service_section{
+  height: 120vh;
+  color: #fff;
+  background-color: #170034;
+}
 .service{
-  background-color: aqua;
-  min-height: auto;
   display: flex;
-  border: 3px solid orange;
-}
 
-.service_text h2, p {
+  /* background-color: #fe2394; */
+
+  /* border: 3px solid green; */
+}
+.service_text{
+  color: #fff;
+  /* border: 3px solid sandybrown; */
+  width: 60%;
+}
+.service_section h2{
+  padding-top: 2em;
+  color: #fff;
   text-align: center;
-  border: 3px solid red;
-} ul{
-  
-  border: 3px solid blue;
-} li{
-  word-spacing: 10px;
-  border: 3px solid greenyellow;
-  padding-top: 30px;
-  color: black;
+}
+.service_text p{
+  color: #fff;
   margin-left: 4em;
+  font-size: 1.3em;
+  /* border: 3px solid palegreen; */
+  width: 90%;
+} 
+.service_text ul{
+  list-style-type:disc;
+  padding-left: 1em;
+}
+.service_text li{
+  color: #fff;
+  margin-left: 4em;
+  font-size: 1.3em;
+  padding: 10px;
+  /* border: 3px solid white; */
+  width: 50%;
 }
 
-.service_img{
-  width: 40%;
-  border: 3px solid green;
-} */
+.service_list{
+  display: none;
+}
+.list_one{}
+.list_two {}
 
-
-
-
-
+.service img{
+  width: 100%;
+  /* border: 3px solid rebeccapurple; */
+  justify-content: center;
+  text-align: center;
+  margin-top: 14em;
+}
 
 
 
@@ -329,7 +328,7 @@ p {
     display: block;
     margin-top: 7%;
     width: auto;
-    height: 100vh;
+    height: 10vh;
   }
 
   .hero_text {
@@ -345,7 +344,6 @@ p {
   .hero_text h1 {
     text-align: left;
     font-size: 0.9em;
-    margin: 0%;
     width: 10em;
     height: fit-content;
     margin-left: -3.4em;
@@ -359,27 +357,31 @@ p {
     width: 15em;
     height: fit-content;
     margin-left: -4.7em;
+    /* border: 3px solid red; */
+    padding: 0px;
+    /* margin-bottom: -2em; */
   }
 
   .hero_content img {
     padding-top: 1em;
+    /* border: 3px solid red; */
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
 
   /* About Section */
 
   .about {
-    margin-top: 0em;
+    margin-top: 2.8em;
     display: block;
     background-color: #fff;
-    height: 130vh;
+    height: 100vh;
     width: 100%;
   }
 
   .about_text {
     width: 90%;
-    height: 65vh;
+    height: 80vh;
     text-align: center;
     justify-content: center;
   }
@@ -390,24 +392,172 @@ p {
     font-size: 0.7em;
     color: black;
     font-size: 30px;
-    margin-top: 0.3em;
+    margin-top: 0.1em;
     margin: -0.10em;
+    /* border: 3px solid green; */
+    margin-bottom: 0.7em;
   }
 
   .about_text p {
     text-align: left;
-    height: 70vh;
     color: black;
-    font-size: 0.9em;
+    font-size: 1.0em;
     width: -0.40em;
     margin: -0.10em;
-    margin-left: 1.0em;
+    padding-bottom: 1em;
+    margin-left: 1.4em;
+    margin-bottom: 0%;
+
   }
 
   .about img {
-    display:inline-flex;
-    margin-top: 10em;
+    margin-top: 0%;
     width: 100%;
-    height: 35vh;
+    height: 45vh;
   }
+
+ /*Services*/
+
+.service_section{
+  margin-top: 10em;
+  height: 150vh;
+  color: #fff;
+  background-color: #170034;
+}
+.service{
+
+  border: 3px solid green;
+ */
+}
+.service_text ul{
+  display: none;
+}
+.service_section h2{
+  padding-top: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.service_list{
+  display: flex;
+  flex-wrap: wrap;
+  height: 150%;
+  border: 3px solid yellow;
+  width:10em;
+}
+
+.list_one{
+  list-style-type: disc;
+  height: 4em;
+  border: 3px solid blue;
+  width:10em;
+  
+}
+.list_two{
+  list-style-type: disc;
+  height: 4em;
+  border: 3px solid red;
+  width:10em;
+}
+
+.service_text p{
+  display: none;
+  color: #fff;
+  margin-left: 1.1em;
+  font-size: 1em;
+  padding: 0px;
+  border: 3px solid white;
+
+}
+
+
+.service img{
+  display: none;
+  width: 100%;
+  border: 3px solid rebeccapurple;
+  justify-content: center;
+  text-align: center;
+  margin-top: 14em;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes strackContent{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.animateSide{
+  animation-name: strackContent;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  
+}
+
+@keyframes welcome{
+  from{
+    transform: translateY(-300px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+.animateUp{
+  animation-name: welcome;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.rotate{
+  animation-name: rotate;
+  animation-timing-function: linear;
 }
