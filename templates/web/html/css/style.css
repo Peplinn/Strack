@@ -170,6 +170,40 @@ p {
   padding-top: 1em;
 }
 
+@keyframes strackContent{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.strack_content{
+  animation-name: strackContent;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  
+}
+
+@keyframes welcome{
+  from{
+    transform: translateY(-300px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+.welcome{
+  animation-name: welcome;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
 .hero_text h1:hover {
   background-color: blue;
 }
@@ -214,6 +248,60 @@ p {
   height: 90vh;
   margin-right: 7em;
 }
+
+/*Services*/
+/* 
+.service{
+  background-color: aqua;
+  min-height: auto;
+  display: flex;
+  border: 3px solid orange;
+}
+
+.service_text h2, p {
+  text-align: center;
+  border: 3px solid red;
+} ul{
+  
+  border: 3px solid blue;
+} li{
+  word-spacing: 10px;
+  border: 3px solid greenyellow;
+  padding-top: 30px;
+  color: black;
+  margin-left: 4em;
+}
+
+.service_img{
+  width: 40%;
+  border: 3px solid green;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsiveness */
 
